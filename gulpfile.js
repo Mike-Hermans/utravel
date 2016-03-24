@@ -38,7 +38,8 @@ gulp.task('scripts', function() {
 		.pipe(plumber())
 		.pipe(concat("main.js"))
 		.pipe(uglify())
-		.pipe(gulp.dest('./dist/'));
+		.pipe(gulp.dest('./dist/'))
+		.pipe(browserSync.stream());
 });
 
 gulp.task('build', ['less', 'scripts']);
