@@ -1,0 +1,178 @@
+[
+	{
+		"id": 1,
+		"title": "Limburg, Nederland",
+		"description": "Kasteel Terworm",
+		"price": "100.00",
+		"image": "img/hotel_1.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 2,
+		"title": "Texel, Nederland",
+		"description": "Kogerlstaete Texel",
+		"price": "70.00",
+		"image": "img/hotel_2.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 3,
+		"title": "Limburg, Nederland",
+		"description": "Dieteren",
+		"price": "80.00",
+		"image": "img/hotel_3.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 4,
+		"title": "Groningen, Nederland",
+		"description": "De Zwaluw",
+		"price": "60.00",
+		"image": "img/hotel_4.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 5,
+		"title": "Noord-Holland, Nederland",
+		"description": "Strandhotel Golfzang",
+		"price": "100.00",
+		"image": "img/hotel_5.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 6,
+		"title": "Zuid-Holland, Nederland",
+		"description": "Hotel aan zee",
+		"price": "65.00",
+		"image": "img/hotel_6.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 7,
+		"title": "Zeeland, Nederland",
+		"description": "Zomerlust",
+		"price": "59.00",
+		"image": "img/hotel_7.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 9,
+		"title": "Drenthe, Nederland",
+		"description": "Camping de vrijheid",
+		"price": "30.00",
+		"image": "img/camping_1.jpg",
+		"type": "camping"
+	},
+	{
+		"id": 10,
+		"title": "Gelderland, Nederland",
+		"description": "De kleine Duiker",
+		"price": "20.00",
+		"image": "img/camping_2.jpg",
+		"type": "camping"
+	},
+	{
+		"id": 11,
+		"title": "Zeeland, Nederland",
+		"description": "Minicamping de Visser",
+		"price": "100.00",
+		"image": "img/camping_3.jpg",
+		"type": "camping"
+	},
+	{
+		"id": 12,
+		"title": "Drenthe, Nederland",
+		"description": "De Duinkant",
+		"price": "100.00",
+		"image": "img/camping_4.jpg",
+		"type": "camping"
+	},
+	{
+		"id": 13,
+		"title": "Zeeland, Nederland",
+		"description": "Scheldeoord",
+		"price": "100.00",
+		"image": "img/camping_5.jpg",
+		"type": "camping"
+	},
+	{
+		"id": 14,
+		"title": "Limburg, Nederland",
+		"description": "Recreatiepark Buitenhof",
+		"price": "100.00",
+		"image": "img/bungalow_1.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 15,
+		"title": "Texel, Nederland",
+		"description": "Bungalowpark Eldorado",
+		"price": "80.00",
+		"image": "img/bungalow_2.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 16,
+		"title": "Noord-Holland, Nederland",
+		"description": "Koningshof",
+		"price": "90.00",
+		"image": "img/bungalow_3.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 17,
+		"title": "Terschelling, Nederland",
+		"description": "Landal West",
+		"price": "75.00",
+		"image": "img/bungalow_4.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 18,
+		"title": "Limburg, Nederland",
+		"description": "De Krim",
+		"price": "110.00",
+		"image": "img/bungalow_5.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 19,
+		"title": "Friesland, Nederland",
+		"description": "Resort Makkum",
+		"price": "99.00",
+		"image": "img/bungalow_6.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 21,
+		"title": "Terherne, Friesland",
+		"description": "Vakantiepark Terherne",
+		"price": "90.00",
+		"image": "img/bungalow_7.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 22,
+		"title": "Drenthe, Nederland",
+		"description": "Landgoed 't grote zand",
+		"price": "84.00",
+		"image": "img/bungalow_8.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 23,
+		"title": "Drenthe, Nederland",
+		"description": "Walibi Village",
+		"price": "60.00",
+		"image": "img/bungalow_9.jpg",
+		"type": "bungalow"
+	},
+	{
+		"id": 24,
+		"title": "Zeeland, Nederland",
+		"description": "De Banjaard",
+		"price": "50.00",
+		"image": "img/bungalow_10.jpg",
+		"type": "bungalow"
+	}
+]

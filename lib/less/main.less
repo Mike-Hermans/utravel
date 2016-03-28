@@ -51,26 +51,42 @@ ul, ol {
             background-size: cover;
             background-image: url('http://placehold.it/300x180');
             background-repeat: no-repeat;
+            background-position: center;
             border-bottom: 1px solid #d0d1d5;
         }
         .like, .dislike {
-            box-shadow: 0 0 0 2px #fff,0 6px 9pt 0 rgba(40,55,64,.33);
-            width: 40px;
-            height: 40px;
+            box-shadow: 0 2px 2pt 0 rgba(40,55,64,.33);
+            width: 50px;
+            height: 50px;
             padding: 4px;
             position: absolute;
-            top: 160px;
+            top: 154px;
             border-radius: 50%;
             z-index: 1000;
             display: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            opacity: 0.9;
+        }
+        .like:hover, .dislike:hover {
+            transform: scale(1.1);
+            opacity: 1;
         }
         .like {
-            background: #B8ED61;
-            left: -15px;
+            background-color: #66B8F2;
+            // background-color: #5AE8A8;
+            background-image: url('../img/icons/favorite_white.png');
+            background-size: 24px;
+            background-position: 13px 14px;
+            left: -20px;
         }
         .dislike {
-            background: #FF7070;
-            right: -15px;
+            background-color: #FF7070;
+            background-image: url('../img/icons/delete_white.png');
+            background-size: 14px;
+            right: -20px;
         }
 	    &:first-child {
 	        margin-left: 0;
@@ -137,7 +153,8 @@ ul, ol {
             color: #333333;
         }
         .comment {
-            font-size: 14px;
+            margin-top: 4px;
+            font-size: 12px;
             color: #aaaaaa;
         }
         .date {
@@ -152,6 +169,8 @@ ul, ol {
 
 .more-reviews {
 	margin: 0 auto;
+    padding: 8px 10px;
+    font-size: 12px;
 	display: block;
 	cursor: pointer;
 }
