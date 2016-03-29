@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+
 body {
+    height: 800px;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
+    background-color: #00aab7;
+    background-image: url('../../img/background.jpg'), radial-gradient(ellipse at center, #00aab7 0%, #00aab7 25%, #9ED0F7 100%);
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 ul, ol {
     list-style: none;
@@ -24,6 +32,13 @@ ul, ol {
     height: 180px;
     float: left;
     background: #ccc;
+}
+
+.separator {
+    width: 80%;
+    height: 3px;
+    background-color: #66B8F2;
+    margin: 0 auto;
 }
 
 #suggestions {
@@ -140,7 +155,7 @@ ul, ol {
 	margin-bottom: 20px;
 	padding-top: 20px;
 	overflow: hidden;
-    border-top: 1px solid #dbdbdb;
+    /* border-top: 1px solid #dbdbdb; */
 
     .review {
 		height: 70px;
