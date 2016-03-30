@@ -18,37 +18,61 @@
 	</div>
 </header>
 
+	<!-- Clouds -->
 	<div class="clouds">
 		<div class="x6">
 			<div class="plane"></div>
 		</div>
 		<div class="x1">
-	        <div class="cloud"></div>
-	    </div>
+			<div class="cloud"></div>
+		</div>
 
-	    <div class="x2">
-	        <div class="cloud"></div>
-	    </div>
+		<div class="x2">
+			<div class="cloud"></div>
+		</div>
 
-	    <div class="x3">
-	        <div class="cloud"></div>
-	    </div>
-
-	    <div class="x4">
-	        <div class="cloud"></div>
-	    </div>
-
-	    <div class="x5">
-	        <div class="cloud"></div>
-	    </div>
+		<div class="x3">
+			<div class="cloud"></div>
+		</div>
 	</div>
 
-	<div id="page">
+	<!-- Ground  -->
+	<div class="ground"></div>
 
-		<!-- Suggestions -->
-		<ul id="suggestions"></ul>
+	<button id="logout-btn" class="btn" style="display: block; position: absolute; top: 100px; left: 100px">Logout</button>
 
-	</div>
+	<ul id="page-slider">
+		<li>
+			<!-- Login page -->
+			<div id="login-page">
+				<p class="login-error">Gebruikersnaam of wachtwoord zijn niet correct</p>
+				<input id="username" type="text" placeholder="gebruikersnaam...">
+				<input id="password" type="password" placeholder="wachtwoord...">
+				<button id="login-btn" class="btn login-btn-disabled" disabled>Login</button>
+			</div>
+		</li>
+
+		<li>
+			<!-- Settings page -->
+			<div id="settings-page">
+				<h1 class="title">Hoi <span class="username"></span>, voordat we verder gaan willen we nog een paar dingen van je weten.</h1>
+
+				<h3 class="question">Met wie ga je op vakantie?</h3>
+				<ul id="groups">
+					<li><div class="group solo"></div><button class="btn">Alleen</button></li>
+					<li><div class="group friend"></div><button class="btn">Vriend(in)</button></li>
+					<li><div class="group friends"></div><button class="btn">Vrienden</button></li>
+				</ul>
+			</div>
+		</li>
+
+		<li>
+			<!-- Suggestions -->
+			<div id="suggestions-page">
+				<ul id="suggestions"></ul>
+			</div>
+		</li>
+	</ul>
 
 <script type="text/javascript" src="/dist/main.js"></script>
 </body>

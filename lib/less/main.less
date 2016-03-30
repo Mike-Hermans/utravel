@@ -12,10 +12,7 @@ html {
 body {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    background-color: #00aab7;
-    // background-image: radial-gradient(ellipse at center, #00aab7 0%, #00aab7 40%, #9ED0F7 100%);
-    background-image: linear-gradient(to bottom, #60ccf2 0%,#d9effa 100%);
-    background-repeat: no-repeat;
+    background-color: #A1D490;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -41,11 +38,115 @@ ul, ol {
     list-style: none;
 }
 
-#page {
-    width: 1340px;
+#page-slider {
+
+    width: 300%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    > li {
+        width: 33.33333333%;
+        float: left;
+    }
+}
+
+#login-page, #settings-page, #suggestions-page {
     margin: 200px auto;
     position: relative;
     z-index: 1000;
+}
+
+#login-page {
+    width: 300px;
+    padding: 20px;
+
+    background: rgba(255,255,255,0.4);
+    border-radius: 4px;
+
+    .login-error {
+        display: none;
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #E05858;
+    }
+
+    .login-btn-disabled {
+        cursor: not-allowed !important;
+    }
+
+    #login-btn {
+        width: 100%;
+        cursor: pointer;
+        padding: 6px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 4px;
+        display: block;
+    }
+}
+
+#settings-page {
+    width: 800px;
+
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    #groups {
+        text-align: center;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    .question {
+        text-align: center;
+
+        &:after {
+            content: '';
+            width: 200px;
+            height: 2px;
+            margin: 20px auto;
+            display: block;
+            background: #ffffff;
+        }
+    }
+}
+    .group {
+        width: 180px;
+        height: 180px;
+        margin: 20px;
+        cursor: pointer;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        border: 8px solid rgba(255,255,255,0.2);
+
+        &.solo {
+            background-image: url('../../img/icons/social.png');
+        }
+        &.friend {
+            background-image: url('../../img/icons/friend.png');
+        }
+        &.friends {
+            background-image: url('../../img/icons/people.png');
+        }
+
+        &:hover {
+            border-color: rgba(255,255,255,0.5);
+        }
+    }
+
+#suggestions-page {
+    width: 1320px;
 }
 
 .suggestion-separator {
@@ -214,6 +315,9 @@ ul, ol {
 	cursor: pointer;
 }
 
+
+
+
 .btn {
     padding: 12px;
     border: 1px solid #dbdbdb;
@@ -224,49 +328,11 @@ ul, ol {
     background-color: #ffffff;
 }
 
-// .cloud {
-//     width: 100px;
-//     height: 100px;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: contain;
-//     position: absolute;
-// }
-// .cloud-1 {
-//     background-image: url('../../img/cloud_1.png');
-//     top: 100px;
-//     left: 10px;
-// }
-// .cloud-2 {
-//     width: 80px;
-//     background-image: url('../../img/cloud_2.png');
-//     top: 180px;
-//     left: 20%;
-// }
-// .cloud-3 {
-//     width: 40px;
-//     background-image: url('../../img/cloud_3.png');
-//     top: 120px;
-//     left: 30%;
-// }
-// .cloud-4 {
-//     width: 120px;
-//     background-image: url('../../img/cloud_1.png');
-//     top: 160px;
-//     left: 50%;
-// }
-// .cloud-5 {
-//     width: 80px;
-//     background-image: url('../../img/cloud_2.png');
-//     top: 240px;
-//     left: 80%;
-// }
-// .cloud-6 {
-//     width: 70px;
-//     background-image: url('../../img/cloud_3.png');
-//     top: 80px;
-//     left: 90%;
-// }
+input[type=text], input[type=password] {
+    border: 1px solid #dbdbdb;
+    padding: 8px;
+    border-radius: 4px;
+}
 
 @-webkit-keyframes animateCloud {
     0% {
@@ -325,9 +391,9 @@ ul, ol {
 /* ANIMATIONS */
 
 .x1 {
-	-webkit-animation: animateCloud 35s linear infinite;
-	-moz-animation: animateCloud 35s linear infinite;
-	animation: animateCloud 35s linear infinite;
+	-webkit-animation: animateCloud 55s linear infinite;
+	-moz-animation: animateCloud 55s linear infinite;
+	animation: animateCloud 55s linear infinite;
 
 	-webkit-transform: scale(0.3);
 	-moz-transform: scale(0.3);
@@ -338,8 +404,8 @@ ul, ol {
 
 .x2 {
 	-webkit-animation: animateCloud 20s linear infinite;
-	-moz-animation: animateCloud 20s linear infinite;
-	animation: animateCloud 20s linear infinite;
+	-moz-animation: animateCloud 40s linear infinite;
+	animation: animateCloud 40s linear infinite;
 
 	-webkit-transform: scale(0.1);
 	-moz-transform: scale(0.1);
@@ -347,9 +413,9 @@ ul, ol {
 }
 
 .x3 {
-	-webkit-animation: animateCloud 30s linear infinite;
-	-moz-animation: animateCloud 30s linear infinite;
-	animation: animateCloud 30s linear infinite;
+	-webkit-animation: animateCloud 50s linear infinite;
+	-moz-animation: animateCloud 50s linear infinite;
+	animation: animateCloud 50s linear infinite;
 
 	-webkit-transform: scale(0.4);
 	-moz-transform: scale(0.4);
@@ -359,9 +425,9 @@ ul, ol {
 }
 
 .x4 {
-	-webkit-animation: animateCloud 18s linear infinite;
-	-moz-animation: animateCloud 18s linear infinite;
-	animation: animateCloud 18s linear infinite;
+	-webkit-animation: animateCloud 38s linear infinite;
+	-moz-animation: animateCloud 38s linear infinite;
+	animation: animateCloud 38s linear infinite;
 
 	-webkit-transform: scale(0.3);
 	-moz-transform: scale(0.3);
@@ -369,9 +435,9 @@ ul, ol {
 }
 
 .x5 {
-	-webkit-animation: animateCloud 25s linear infinite;
-	-moz-animation: animateCloud 25s linear infinite;
-	animation: animateCloud 25s linear infinite;
+	-webkit-animation: animateCloud 45s linear infinite;
+	-moz-animation: animateCloud 45s linear infinite;
+	animation: animateCloud 45s linear infinite;
 
 	-webkit-transform: scale(0.2);
 	-moz-transform: scale(0.2);
@@ -380,8 +446,8 @@ ul, ol {
 
 .x6 {
     -webkit-animation: animatePlane 25s linear infinite;
-	-moz-animation: animatePlane 15s linear infinite;
-	animation: animatePlane 15s linear infinite;
+	-moz-animation: animatePlane 25s linear infinite;
+	animation: animatePlane 25s linear infinite;
 
 	-webkit-transform: scale(0.7);
 	-moz-transform: scale(0.7);
@@ -406,7 +472,23 @@ ul, ol {
     top: 0;
     left: 0;
     right: 0;
+    height: 75%;
+    z-index: -2;
+    background-image: linear-gradient(to bottom, #60ccf2 0%,#d9effa 100%);
+    background-repeat: no-repeat;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
     z-index: -1;
+    background-color: #A1D490;
+    background-image: url('../../img/road.png');
+    background-position: 0 20px;
+    background-repeat: repeat-x;
 }
 
 .cloud {
