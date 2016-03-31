@@ -17,52 +17,51 @@ body {
     overflow-x: hidden;
 }
 
-footer {
-    width: 100%;
-    height: 200px;
-    position: fixed;
-    bottom: 0;
-    background-color: #fdfdfd;
-}
-    footer #clouds {
-        width: 100%;
-        height: 125px;
-        background-image: url('../../img/clouds.png');
-        background-repeat: repeat-x;
-        background-position: top;
-        position: absolute;
-        top: -40px;
-    }
-
 ul, ol {
     list-style: none;
 }
 
+.opacity-container {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 4px;
+}
+
 #page-slider {
 
-    width: 300%;
+    width: 400%;
     height: 100%;
     margin: 0 auto;
     overflow: hidden;
 
     > li {
-        width: 33.33333333%;
+        width: 25%;
         float: left;
     }
 }
 
-#login-page, #settings-page, #suggestions-page {
-    margin: 200px auto;
+#login-page, #group-selection-page, #settings-page, #suggestions-page {
+    margin: 140px auto;
     position: relative;
     z-index: 1000;
+
+    > .title {
+        margin-bottom: 40px;
+        text-align: center;
+
+        &:after {
+            content: '';
+            width: 200px;
+            height: 2px;
+            margin: 20px auto;
+            display: block;
+            background: #ffffff;
+        }
+    }
 }
 
 #login-page {
-    width: 300px;
-    padding: 20px;
-
-    background: rgba(255,255,255,0.4);
-    border-radius: 4px;
+    width: 800px;
 
     .login-error {
         display: none;
@@ -90,31 +89,52 @@ ul, ol {
 
 #settings-page {
     width: 800px;
+    overflow: hidden;
 
     text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 
-    .title {
-        margin-bottom: 40px;
-    }
+    .input {
+        width: 47%;
+        margin: 10px;
+        padding-left: 30px;
+        display: inline-block;
+        background-color: #ffffff;
+        background-position: 12px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
 
+        &.location-icon {
+            background-image: url('../../img/icons/location.png');
+        }
+        &.budget-icon {
+            background-image: url('../../img/icons/tool-2.png');
+        }
+        &.calendar-icon {
+            background-image: url('../../img/icons/time.png');
+        }
+
+        input[type=text], input[type=number], select {
+            width: 90%;
+            margin: 12px;
+            padding: 0;
+            background-color: rgba(0,0,0,0);
+            border: 0;
+
+            &:active, &:focus {
+                outline: 0;
+            }
+        }
+    }
+}
+
+#group-selection-page {
     #groups {
         text-align: center;
 
         li {
             display: inline-block;
-        }
-    }
-
-    .question {
-        text-align: center;
-
-        &:after {
-            content: '';
-            width: 200px;
-            height: 2px;
-            margin: 20px auto;
-            display: block;
-            background: #ffffff;
         }
     }
 }
@@ -144,6 +164,16 @@ ul, ol {
             border-color: rgba(255,255,255,0.5);
         }
     }
+
+#settings-page-slider {
+    width: 200%;
+    overflow: hidden;
+
+    > li {
+        width: 50%;
+        float: left;
+    }
+}
 
 #suggestions-page {
     width: 1320px;
