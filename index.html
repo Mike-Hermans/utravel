@@ -12,15 +12,6 @@
 	<script type="text/javascript" src="lib/scripts/jquery.js"></script>
 </head>
 <body>
-<header>
-	<div class="profile">
-		<img class="profileimg"></img>
-		<h1>Robert Hegeraad</h1>
-	</div>
-	<div class="back">
-		Groepen
-	</div>
-</header>
 
 	<!-- Clouds -->
 	<div class="clouds">
@@ -40,8 +31,17 @@
 		</div>
 	</div>
 
-	<!-- Ground  -->
-	<!-- <div class="ground"></div> -->
+	<div class="overlay"></div>
+
+	<header>
+		<div class="profile">
+			<img class="profileimg"></img>
+			<h1>Robert Hegeraad</h1>
+		</div>
+		<div class="back">
+			Groepen
+		</div>
+	</header>
 
 	<button id="logout-btn" class="btn" style="display: block; position: absolute; top: 100px; left: 100px">Logout</button>
 
@@ -55,7 +55,7 @@
 					<p class="login-error">Gebruikersnaam of wachtwoord zijn niet correct</p>
 					<input id="username" type="text" placeholder="gebruikersnaam...">
 					<input id="password" type="password" placeholder="wachtwoord...">
-					<button id="login-btn" class="btn login-btn-disabled" disabled>Login</button>
+					<button id="login-btn" class="btn login-btn-disabled no-btn" disabled>Login</button>
 				</div>
 			</div>
 			<div class="ground"></div>
@@ -64,11 +64,11 @@
 
 		<li>
 			<div id="group-selection-page">
-				<h1 class="title">Met wie ga je op vakantie?</h1>
+				<h1 class="title">Hoi <span class="username"></span>, met wie ga je op vakantie?</h1>
 				<ul id="groups">
-					<li><div class="group solo"></div><button class="btn">Alleen</button></li>
-					<li><div class="group friend"></div><button class="btn">Vriend(in)</button></li>
-					<li><div class="group friends"></div><button class="btn">Vrienden</button></li>
+					<li><div class="group solo"></div><button class="btn no-btn">Alleen</button></li>
+					<li><div class="group friend"></div><button class="btn no-btn">Vriend(in)</button></li>
+					<li><div class="group friends"></div><button class="btn no-btn">Vrienden</button></li>
 				</ul>
 			</div>
 		</li>
@@ -76,7 +76,7 @@
 		<li>
 			<!-- Group selection page -->
 			<div id="settings-page">
-				<h1 class="title">Hoi <span class="username"></span>, voordat we verder gaan willen we nog een paar dingen van je weten.</h1>
+				<h1 class="title">Om de resultaten nauwkeuriger te maken kun je hieronder nog extra informatie meegeven.</h1>
 
 				<div class="opacity-container">
 					<div>
@@ -94,8 +94,8 @@
 						<div class="input calendar-icon"><input id="dt1" type="text" placeholder="Incheckdatum"/></div>
 						<div class="input calendar-icon"><input id="dt2" type="text" placeholder="Uitcheckdatum"/></div>
 					</div>
-					<button id="settings-skip-btn" class="btn">Overslaan</button>
-					<button id="settings-create-btn" class="btn">Vind jouw droomvakantie</button>
+					<button id="settings-skip-btn" class="btn no-btn" style="margin-left: 10px;">Overslaan</button>
+					<button id="settings-create-btn" class="btn no-btn" style="float: right; margin-right: 10px;">Vind jouw droomvakantie</button>
 				</div>
 
 				<!-- <ul id="settings-page-slider">

@@ -21,27 +21,50 @@ ul, ol {
     list-style: none;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 0;
+}
+
 .opacity-container {
     padding: 20px;
-    background-color: rgba(255,255,255,0.4);
+    // background-color: rgba(255,255,255,0.4);
     border-radius: 4px;
 }
 
 #page-slider {
-
     width: 400%;
     height: 100%;
-    margin: 0 auto;
     overflow: hidden;
 
     > li {
         width: 25%;
+        height: 100vh;
         float: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    > li:nth-child(1) {
+        background-image: url('../../img/city_1.jpg');
+    }
+    > li:nth-child(2) {
+        background-image: url('../../img/city_2.jpg');
+    }
+    > li:nth-child(3) {
+        background-image: url('../../img/city_4.jpg');
+    }
+    > li:nth-child(4) {
+        background-image: url('../../img/city_3.jpg');
     }
 }
 
 #login-page, #group-selection-page, #settings-page, #suggestions-page {
-    margin: 140px auto;
+    margin: 250px auto;
     position: relative;
     z-index: 1000;
 
@@ -51,9 +74,9 @@ ul, ol {
 
         &:after {
             content: '';
-            width: 200px;
+            width: 400px;
             height: 2px;
-            margin: 20px auto;
+            margin: 40px auto 20px;
             display: block;
             background: #ffffff;
         }
@@ -209,7 +232,7 @@ ul, ol {
 
         .detail {
             width: 100%;
-            background: #ffffff;
+            background-color: rgba(255,255,255,0.9);
             display: none;
         }
         .background {
@@ -239,6 +262,7 @@ ul, ol {
             cursor: pointer;
             transition: all .2s ease-in-out;
             opacity: 0.9;
+            display: none;
         }
         .like:hover, .dislike:hover {
             transform: scale(1.1);
@@ -267,13 +291,14 @@ ul, ol {
 	    &:first-child:before, &:last-child:before {
 	        position: absolute;
 	        top: -50px;
-	        font-size: 20px;
+	        font-size: 24px;
 	    }
 	    &:first-child:before {
-	        width: 500px;
+	        width: 600px;
 	        content: "DIT IS WAT WIJ VOOR JOU HEBBEN GEVONDEN";
 	    }
 	    &:last-child:before {
+            width: 320px;
 	        content: "...OF IETS HEEL ANDERS?";
 	    }
 	}
@@ -356,6 +381,21 @@ ul, ol {
 
 .btn-white {
     background-color: #ffffff;
+}
+
+.no-btn {
+    color: #ffffff;
+    padding: 8px 25px;
+    background: rgba(0,0,0,0);
+    border: 3px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    cursor: pointer;
+
+    &:hover {
+        background: #ffffff;
+        color: #333333;
+    }
 }
 
 input[type=text], input[type=password] {
@@ -509,10 +549,7 @@ input[type=text], input[type=password] {
 }
 
 .ground {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    t
     height: 25%;
     z-index: -1;
     background-color: #A1D490;
