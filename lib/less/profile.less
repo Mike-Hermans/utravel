@@ -1,5 +1,4 @@
 header {
-	height: 75px;
 	background-color: #fff;
 	box-shadow: 0px -2px 5px 3px rgba(0,0,0,0.75);
 	color: #222;
@@ -7,14 +6,16 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	display: none;
+	z-index: 10000;
+	height: 75px;
+	// display: none;
 
 	.profile {
 		float: left;
 		height: 64px;
 		position: absolute;
 		top: 6px;
-		left: 6px;
+		right: 20px;
 
 		img {
 			display: block;
@@ -32,6 +33,12 @@ header {
 			height: 64px;
 			line-height: 64px;
 			margin-left: 15px;
+		}
+
+		button {
+			margin-left: 20px;
+			position: relative;
+			top: 12px;
 		}
 	}
 

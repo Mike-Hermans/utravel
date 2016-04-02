@@ -34,16 +34,30 @@
 	<div class="overlay"></div>
 
 	<header>
+		<div id="group-page">
+			<div class="group-dropdown"><div data-current="0" id="selected-group" class="group solo"></div></div>
+			<ul class="groups">
+				<li><div data-group="0" class="group solo"></div></li>
+				<li><div data-group="1" class="group friend"></div></li>
+				<li><div data-group="2" class="group friends"></div></li>
+			</ul>
+			<div class="group-detail">
+				<div class="add-user-container">
+					<div class="user-tags"></div>
+					<input type="text" id="add-user-text" placeholder="Voeg een gebruiker toe...">
+				</div>
+				<button id="add-user-btn" class="btn">Voeg toe</button>
+			</div>
+		</div>
 		<div class="profile">
-			<img class="profileimg"></img>
-			<h1>Robert Hegeraad</h1>
+			<!-- <img class="profileimg"></img> -->
+			<h1 class="username"></h1>
+			<button id="logout-btn" class="btn">Logout</button>
 		</div>
-		<div class="back">
+		<!-- <div class="back">
 			Groepen
-		</div>
+		</div> -->
 	</header>
-
-	<button id="logout-btn" class="btn" style="display: block; position: absolute; top: 100px; left: 100px">Logout</button>
 
 	<ul id="page-slider">
 		<li>
@@ -66,9 +80,9 @@
 			<div id="group-selection-page">
 				<h1 class="title">Hoi <span class="username"></span>, met wie ga je op vakantie?</h1>
 				<ul id="groups">
-					<li><div class="group solo"></div><button class="btn no-btn">Alleen</button></li>
-					<li><div class="group friend"></div><button class="btn no-btn">Vriend(in)</button></li>
-					<li><div class="group friends"></div><button class="btn no-btn">Vrienden</button></li>
+					<li class="group-selection" data-group="0"><div class="group solo"></div><button class="btn no-btn">Alleen</button></li>
+					<li class="group-selection" data-group="1"><div class="group friend"></div><button class="btn no-btn">Vriend(in)</button></li>
+					<li class="group-selection" data-group="2"><div class="group friends"></div><button class="btn no-btn">Vrienden</button></li>
 				</ul>
 			</div>
 		</li>
@@ -94,8 +108,10 @@
 						<div class="input calendar-icon"><input id="dt1" type="text" placeholder="Incheckdatum"/></div>
 						<div class="input calendar-icon"><input id="dt2" type="text" placeholder="Uitcheckdatum"/></div>
 					</div>
-					<button id="settings-skip-btn" class="btn no-btn" style="margin-left: 10px;">Overslaan</button>
-					<button id="settings-create-btn" class="btn no-btn" style="float: right; margin-right: 10px;">Vind jouw droomvakantie</button>
+					<!-- <button id="settings-skip-btn" class="btn no-btn" style="margin-left: 10px;">Overslaan</button> -->
+					<div style="text-align: center;">
+						<button id="settings-create-btn" class="btn no-btn" style="margin-right: 10px;">Vind jouw droomvakantie</button>
+					</div>
 				</div>
 
 				<!-- <ul id="settings-page-slider">

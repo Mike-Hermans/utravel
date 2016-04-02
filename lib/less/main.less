@@ -37,6 +37,116 @@ ul, ol {
     border-radius: 4px;
 }
 
+#group-page {
+    overflow: hidden;
+
+    .groups {
+        float: left;
+        display: none;
+        border: 1px solid;
+        border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+        background: #ffffff;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: -4px;
+        position: absolute;
+        top: 75px;
+    }
+    .group-dropdown {
+        margin-left: 10px;
+        float: left;
+
+        background-image: url('../../img/icons/arrows-2.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 10px
+    }
+    .group-detail {
+        float: left;
+        margin: 20px;
+        display: inline-block;
+
+        .add-user-container {
+            border: 1px solid;
+            border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+            float: left;
+        }
+        #add-user-text {
+            border: 0;
+            background: #ffffff;
+            float: left;
+
+            &:active, &:focus: {
+                outline: 0;
+                border: 0;
+            }
+        }
+        #add-user-btn {
+            margin-left: 4px;
+            float: left;
+            padding: 7px;
+            background: #ffffff;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .user-tags {
+            overflow: hidden;
+            float: left;
+        }
+
+        .user-tag {
+            margin: 3px 5px;
+            font-size: 12px;
+            // text-shadow: 1px 1px 1px #000000;
+            padding: 4px 8px;
+            padding-right: 30px;
+            color: #333333;
+            background-image: url('../../img/icons/delete.png');
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: 90% center;
+            background-color: #FF7070;
+            background-color: #ffffff;
+            float: left;
+            border-radius: 4px;
+            box-shadow: 0 0 2px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
+    }
+
+    .group {
+        width: 60px;
+        height: 60px;
+        margin: 8px;
+        cursor: pointer;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        // border: 2px solid #000000;
+
+        &.solo {
+            background-image: url('../../img/icons/social.png');
+        }
+        &.friend {
+            background-image: url('../../img/icons/friend.png');
+        }
+        &.friends {
+            background-image: url('../../img/icons/people.png');
+        }
+        &.add {
+            background-image: url('../../img/icons/cross.png');
+        }
+    }
+
+    .groups .group:hover {
+        background-color: #60ccf2;
+        border: 2px solid #60ccf2;
+    }
+}
+
 #page-slider {
     width: 400%;
     height: 100%;
