@@ -148,12 +148,12 @@ ul, ol {
 }
 
 #page-slider {
-    width: 400%;
+    width: 500%;
     height: 100%;
     overflow: hidden;
 
     > li {
-        width: 25%;
+        width: 20%;
         height: 100vh;
         float: left;
         background-size: cover;
@@ -169,11 +169,14 @@ ul, ol {
         background-image: url('../../img/city_4.jpg');
     }
     > li:nth-child(4) {
+        background-image: url('../../img/city_4.jpg');
+    }
+    > li:nth-child(5) {
         background-image: url('../../img/city_3.jpg');
     }
 }
 
-#login-page, #group-selection-page, #settings-page, #suggestions-page {
+#login-page, #group-selection-page, #settings-page, #suggestions-page, #choices-page {
     margin: 250px auto;
     position: relative;
     z-index: 1000;
@@ -270,18 +273,38 @@ ul, ol {
             display: inline-block;
         }
     }
+
+    .group {
+        box-shadow: 0 0 3px rgba(0,0,0,0.4);
+
+        -webkit-transition:all .3s ease-out;
+        -moz-transition:all .3s ease-out;
+        -ms-transition:all .3s ease-out;
+        -o-transition:all .3s ease-out;
+        transition:all .3s ease-out;
+
+        &:hover {
+            border: 6px solid rgba(102,184,242, 0.9);
+
+            -webkit-transform:translate(0px,-10px);
+            -moz-transform:translate(0px,-10px);
+            -ms-transform:translate(0px,-10px);
+            -o-transform:translate(0px,-10px);
+            transform:translate(0px,-10px);
+        }
+    }
 }
     .group {
         width: 180px;
         height: 180px;
         margin: 20px;
         cursor: pointer;
+        position: relative;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100px;
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.8);
         border-radius: 50%;
-        border: 8px solid rgba(255,255,255,0.2);
 
         &.solo {
             background-image: url('../../img/icons/social.png');
@@ -293,8 +316,18 @@ ul, ol {
             background-image: url('../../img/icons/people.png');
         }
 
-        &:hover {
-            border-color: rgba(255,255,255,0.5);
+        .tooltip {
+            border: 1px solid #dbdbdb;
+            color: black;
+            background: white;
+            padding: 4px 8px;
+            position: absolute;
+            bottom: 5px;
+            left: 20px;
+            right: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.4);
+            font-size: 12px;
         }
     }
 
@@ -305,6 +338,107 @@ ul, ol {
     > li {
         width: 50%;
         float: left;
+    }
+}
+
+#choices-page {
+    width: 800px;
+
+    #choices {
+        text-align: center;
+    }
+
+    .choice {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        background-size: 80px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255,255,255,0.8);
+        margin: 10px;
+        padding: 20px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 0 3px rgba(0,0,0,0.4);
+
+        -webkit-transition:all .3s ease-out;
+        -moz-transition:all .3s ease-out;
+        -ms-transition:all .3s ease-out;
+        -o-transition:all .3s ease-out;
+        transition:all .3s ease-out;
+
+        &.selected {
+            border: 6px solid rgba(102,184,242, 0.9);
+        }
+
+        &:hover {
+            -webkit-transform:translate(0px,-10px);
+            -moz-transform:translate(0px,-10px);
+            -ms-transform:translate(0px,-10px);
+            -o-transform:translate(0px,-10px);
+            transform:translate(0px,-10px);
+        }
+
+        .tooltip {
+            border: 1px solid #dbdbdb;
+            color: black;
+            background: white;
+            padding: 4px 8px;
+            position: absolute;
+            bottom: 5px;
+            left: 20px;
+            right: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.4);
+            font-size: 12px;
+        }
+
+        // .dismiss {
+        //     width: 8px;
+        //     height: 8px;
+        //     display: inline-block;
+        //     background-size: 8px;
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     background-image: url('../../img/icons/delete.png');
+        //     position: absolute;
+        //     right: 6px;
+        //     top: 8px;
+        //     cursor: pointer;
+        // }
+
+        &.camping {
+            background-image: url('../../img/icons/transport-2.png');
+        }
+
+        &.beach {
+            background-image: url('../../img/icons/people-1.png');
+        }
+
+        &.hike {
+            background-image: url('../../img/icons/people-2.png');
+        }
+
+        &.ski {
+            background-image: url('../../img/icons/sport-1.png');
+        }
+
+        &.hotel {
+            background-image: url('../../img/icons/sleeping.png');
+        }
+
+        &.restaurant {
+            background-image: url('../../img/icons/utensil.png');
+        }
+
+        &.sights {
+            background-image: url('../../img/icons/map.png');
+        }
+
+        &.pool {
+            background-image: url('../../img/icons/pool.png');
+        }
     }
 }
 

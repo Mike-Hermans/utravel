@@ -52,7 +52,7 @@
 		<div class="profile">
 			<!-- <img class="profileimg"></img> -->
 			<h1 class="username"></h1>
-			<button id="logout-btn" class="btn">Logout</button>
+			<button id="logout-btn" class="btn">Uitloggen</button>
 		</div>
 		<!-- <div class="back">
 			Groepen
@@ -80,9 +80,9 @@
 			<div id="group-selection-page">
 				<h1 class="title">Hoi <span class="username"></span>, met wie ga je op vakantie?</h1>
 				<ul id="groups">
-					<li class="group-selection" data-group="0"><div class="group solo"></div><button class="btn no-btn">Alleen</button></li>
-					<li class="group-selection" data-group="1"><div class="group friend"></div><button class="btn no-btn">Vriend(in)</button></li>
-					<li class="group-selection" data-group="2"><div class="group friends"></div><button class="btn no-btn">Vrienden</button></li>
+					<li class="group-selection" data-group="0"><div class="group solo"><div class="tooltip">Alleen</div></div></li>
+					<li class="group-selection" data-group="1"><div class="group friend"><div class="tooltip">Vriend(in)</div></div></li>
+					<li class="group-selection" data-group="2"><div class="group friends"><div class="tooltip">Vrienden</div></div></li>
 				</ul>
 			</div>
 		</li>
@@ -110,43 +110,30 @@
 					</div>
 					<!-- <button id="settings-skip-btn" class="btn no-btn" style="margin-left: 10px;">Overslaan</button> -->
 					<div style="text-align: center;">
-						<button id="settings-create-btn" class="btn no-btn" style="margin-right: 10px;">Vind jouw droomvakantie</button>
+						<button id="settings-create-btn" class="btn no-btn" style="margin-right: 10px;">Ga verder</button>
 					</div>
 				</div>
+			</div>
+		</li>
 
-				<!-- <ul id="settings-page-slider">
-					<li>
-						<h3 class="question">Met wie ga je op vakantie?</h3>
-						<ul id="groups">
-							<li><div class="group solo"></div><button class="btn">Alleen</button></li>
-							<li><div class="group friend"></div><button class="btn">Vriend(in)</button></li>
-							<li><div class="group friends"></div><button class="btn">Vrienden</button></li>
-						</ul>
-					</li>
-					<li>
-						<h3 class="question">De volgende informatie helpt ons om jouw droomreis te vinden, maar niets is verplicht</h3>
+		<li>
+			<div id="choices-page">
+				<h1 class="title">Wat vind jij leuk om te doen tijdens jouw vakantie?</h1>
+				<ul id="choices">
+					<li class="choice pool"><div class="tooltip">Zwemmen</div></li>
+					<li class="choice beach"><div class="tooltip">Strand</div></li>
+					<li class="choice restaurant"><div class="tooltip">Lekker eten</div></li>
+					<li class="choice ski"><div class="tooltip">Wintersport</div></li>
 
-						<div class="opacity-container">
-							<div>
-								<div class="input location-icon"><input id="location" type="text" placeholder="Locatie"/></div>
-								<div class="input budget-icon"><select id="budget">
-									<option selected>Kies jouw budget</option>
-									<option value="100">tot €100</option>
-									<option value="200">tot €200</option>
-									<option value="300">tot €300</option>
-									<option value="400">meer dan €300</option>
-								</select></div>
-							</div>
+					<li class="choice hike"><div class="tooltip">Wandelen</div></li>
+					<li class="choice sights"><div class="tooltip">Omgeving</div></li>
+					<li class="choice camping"><div class="tooltip">Camping</div></li>
+					<li class="choice hotel"><div class="tooltip">Hotel</div></li>
+				</ul>
 
-							<div>
-								<div class="input calendar-icon"><input id="dt1" type="text" placeholder="Incheckdatum"/></div>
-								<div class="input calendar-icon"><input id="dt2" type="text" placeholder="Uitcheckdatum"/></div>
-							</div>
-							<button id="settings-skip-btn" class="btn">Overslaan</button>
-							<button id="settings-create-btn" class="btn">Vind jouw droomvakantie</button>
-						</div>
-					</li>
-				</ul> -->
+				<div style="text-align: center; clear: both;">
+					<button id="choices-btn" class="btn no-btn">Vind jouw droomvakantie</button>
+				</div>
 			</div>
 		</li>
 
