@@ -52,14 +52,23 @@ ul, ol {
         position: absolute;
         top: 75px;
     }
-    .group-dropdown {
-        margin-left: 10px;
+    .add-group-btn {
+        width: 40px;
+        height: 76px;
         float: left;
-
-        background-image: url('../../img/icons/arrows-2.png');
+        margin-left: 10px;
+        cursor: pointer;
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../../img/icons/cross.png');
+    }
+    .group-dropdown {
+        float: left;
         background-position: right;
         background-repeat: no-repeat;
-        background-size: 10px
+        background-size: 10px;
+        background-image: url('../../img/icons/arrows-2.png');
     }
     .group-detail {
         float: left;
@@ -591,20 +600,22 @@ ul, ol {
         line-height: 26px;
 
         .title {
-            font-size: 18px;
+            font-size: 16px;
             color: #333333;
         }
         .description {
-            font-size: 16px;
-            color: #aaaaaa;
+            font-size: 15px;
+            color: #888888;
         }
         .price {
-            font-size: 14px;
-            color: #aaaaaa;
+            font-size: 13px;
+            color: #777777;
             margin-bottom: 10px;
         }
         .view {
-            text-align: center;
+            font-size: 12px;
+            text-align: right;
+            text-decoration: none;
         }
 	}
 }
@@ -651,6 +662,15 @@ ul, ol {
 
 
 
+#logout-btn {
+    margin-top: 4px;
+    margin-left: 20px;
+    float: left;
+    padding: 7px;
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    cursor: pointer;
+}
 
 .btn {
     padding: 12px;
