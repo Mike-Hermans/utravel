@@ -1,0 +1,42 @@
+[
+	{
+		"id": 25,
+		"title": "Limburg, Nederland",
+		"description": "Kasteel Terworm",
+		"price": "100.00",
+		"image": "img/skivakantie_1.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 26,
+		"title": "Texel, Nederland",
+		"description": "Kogerlstaete Texel",
+		"price": "70.00",
+		"image": "img/skivakantie_2.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 27,
+		"title": "Limburg, Nederland",
+		"description": "Dieteren",
+		"price": "80.00",
+		"image": "img/skivakantie_3.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 28,
+		"title": "Groningen, Nederland",
+		"description": "De Zwaluw",
+		"price": "60.00",
+		"image": "img/skivakantie_4.jpg",
+		"type": "hotel"
+	},
+	{
+		"id": 29,
+		"title": "Noord-Holland, Nederland",
+		"description": "Strandhotel Golfzang",
+		"price": "100.00",
+		"image": "img/skivakantie_5.jpg",
+		"type": "hotel"
+	},
+]

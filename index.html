@@ -37,11 +37,22 @@
 		<div id="group-page">
 			<div class="group-dropdown"><div data-current="0" id="selected-group" class="group solo"></div></div>
 			<ul class="groups">
-				<li><div data-group="0" class="group solo"></div></li>
-				<li><div data-group="1" class="group friend"></div></li>
-				<li><div data-group="2" class="group friends"></div></li>
+				<li><div data-group="0" class="group solo group-select-option"></div></li>
+				<li><div data-group="1" class="group friend group-select-option"></div></li>
+				<li><div data-group="2" class="group friends group-select-option"></div></li>
+				<li class="add-group">
+					<div data-group="add" class="group add"></div>
+					<ul class="new-group-dropdown">
+						<li><div data-group="0" class="group solo group-add-option"></div></li>
+						<li><div data-group="1" class="group friend group-add-option"></div></li>
+						<li><div data-group="2" class="group friends group-add-option"></div></li>
+					</ul>
+				</li>
 			</ul>
 			<div class="group-detail">
+				<div class="group-name-container">
+					<input type="text" id="group-name-text" placeholder="Groepsnaam...">
+				</div>
 				<div class="add-user-container">
 					<div class="user-tags"></div>
 					<input type="text" id="add-user-text" placeholder="Voeg een gebruiker toe...">
@@ -58,6 +69,8 @@
 			Groepen
 		</div> -->
 	</header>
+
+	<!-- <div id="group-modal">HELLELOO</div> -->
 
 	<ul id="page-slider">
 		<li>
